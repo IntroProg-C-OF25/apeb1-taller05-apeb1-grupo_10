@@ -9,7 +9,7 @@ public class Ejercicio3_Mayor_de_tres_numeros {
     public static void main(String[] args) {
         int num1, num2, num3, n_mayor = 0;
         Scanner teclado = new Scanner(System.in);
-        System.out.print("Ingrese un primer número: ");
+        System.out.print("Ingrese un primer numero: ");
         num1 = teclado.nextInt();
         System.out.print("Ingrese un segundo numero: ");
         num2 = teclado.nextInt();
