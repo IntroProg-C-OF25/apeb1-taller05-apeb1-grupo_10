@@ -16,6 +16,7 @@ public class Ejercicio4_Descuentocompras {
         
     }
 }
-/***
- * 
+/*** run-single:
+ *DAME EL PRECIO ORIGINAL DEL PRODUCTO: 120
+ *EL PRECIO FINAL DEL PRODUCTO ES DE: 108.0
  */
