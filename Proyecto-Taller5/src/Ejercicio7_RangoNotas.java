@@ -35,5 +35,7 @@ public class Ejercicio7_RangoNotas {
 BUILD SUCCESSFUL (total time: 5 seconds)
  */
 /***
- * 
+ * INGRESE LA CALIFICACION: 50
+ *ESTUDIANTE REPROBADO
+BUILD SUCCESSFUL (total time: 4 seconds)
  */
