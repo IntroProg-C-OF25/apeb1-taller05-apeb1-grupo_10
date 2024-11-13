@@ -11,36 +11,41 @@ public class Ejercicio9_Ordenamientodenumeros {
 
     public static void main(String[] args) {
         int num1, num2, num3;
-        Scanner ingreso = new Scanner(System.in);
-        System.out.print("DAME EL PRIMER NUMERO: ");
-        num1 = ingreso.nextInt();
-        System.out.print("DAME EL SEGUNDO NUMERO: ");
-        num2 = ingreso.nextInt();
-        System.out.print("DAME EL TERCER NUMERO: ");
-        num3 = ingreso.nextInt();
-        if (num1 > num2) {
-            num1 = num1 + num2;
-            num2 = num1 - num2;
-            num1 = num1 - num2;
-            if (num1 > num3) {
-                num1 = num1 + num3;
-                num3 = num1 - num3;
-                num1 = num1 - num3;
-                if (num2 > num3) {
-                    num2 = num2 + num3;
-                    num3 = num2 - num3;
-                    num2 = num2 - num3;
-                    System.out.println("LOS NUMEROS ORDENADOS DE FORMA ASCENDENTE SON = " + num1 + num2 + num3);
+        Scanner tcl = new Scanner(System.in);
+        System.out.print("Ingrese un numero: ");
+        num1 = tcl.nextInt();
+        System.out.print("ingrese un numero: ");
+        num2 = tcl.nextInt();
+        System.out.print("Ingrese un numero: ");
+        num3 = tcl.nextInt();
+        if (num1 <= num2 && num1 <= num3) {
+            if (num2 <= num3) {
+                System.out.println("El orden de los numeros es: " + num1 + ", " + num2 + ", " + num3);
+            } else {
+                System.out.println("El orden de los numeros es: " + num1 + ", " + num3 + ", " + num2);
+            }
+        } else {
+            if (num2 <= num1 && num2 <= num3) {
+                if (num1 <= num3) {
+                    System.out.println("El orden de los numeros es: " + num2 + ", " + num1 + ", " + num3);
+                } else {
+                    System.out.println("El orden de los numeros es: " + num2 + ", " + num3 + ", " + num1);
+                }
+            }else {
+                if (num1 <= num2) {
+                    System.out.println("El orden de los numeros es: " + num3 + ", " + num2 + ", " + num1);
+                } else {
+                    System.out.println("El orden de los numeros es: " + num3 + ", " + num1 + ", " + num2);
                 }
             }
-        }
+        }        
     }
 }
 /***
- * DAME EL PRIMER NUMERO: 9
-DAME EL SEGUNDO NUMERO: 6
-DAME EL TERCER NUMERO: 3
-LOS NUMEROS ORDENADOS DE FORMA ASCENDENTE SON = 369
-BUILD SUCCESSFUL (total time: 10 seconds)
+ * run:
+* Ingrese un numero: 2
+* ingrese un numero: 8
+* Ingrese un numero: 3
+* El orden de los numeros es: 2, 3, 8
 
  */
